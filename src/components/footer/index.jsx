@@ -26,7 +26,7 @@ export default function index() {
               <Image
               fill={true}
               alt={'image'}
-              src={`/images/snype_pic02.png`}
+              src={`/public/Images/snype_pic02.png`}
               />
             </div>
             <h2>Let's Edit</h2>
