@@ -1,0 +1,152 @@
+.header{
+  position: absolute;
+  top: 0;
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 900;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 1.5rem;
+
+  .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 0.5em;
+
+    p{
+      margin: 0px;
+      transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    .name{
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      margin-left: 5px;
+      transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+      p{
+        position: relative;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        color: white;
+        &:nth-of-type(2){
+          padding-left: 0.3em;
+        }
+        &:nth-of-type(3){
+          position: absolute;
+          left: 120px;
+          margin-left: 0.8em;
+        }
+      }
+    }
+    &:hover{
+      .copyright{
+        transform: rotate(360deg);
+      }
+      .name{
+        padding-right: 30px;
+      }
+    }
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+
+    .el{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      padding-right: 1rem;
+      margin: 0;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover{
+        .indicator{
+          transform: scale(1);
+        }
+      }
+      .indicator{
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        top: 40px;
+        left: 50%;
+        margin: 0;
+        background-color: white;
+        border-radius: 50%;
+        transform: scale(0) translateX(-50%);
+        transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+      .link{
+        color: white;
+        text-decoration: none;
+      }
+    }
+    a{
+      cursor: pointer;
+    }
+  }
+}
+.headerButtonContainer{
+  transform: scale(0);
+  position: fixed;
+  top: 0.5em;
+  right: 0px;
+  z-index: 6;
+
+  .button{
+    position: relative;
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #1C1D20;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    .burger{
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      &::after, &::before{
+        content: "";
+        display: block;
+        width: 40%;
+        background-color: white;
+        height: 1px;
+        margin: auto;
+        position: relative;
+        transition: transform 0.3s;
+      }
+      
+      &::after{
+        top: -5px;
+      }
+      &::before{
+        top: 5px;
+      }
+  
+    }
+  
+    .burgerActive{
+      &::after{
+        transform: rotate(45deg);
+        top: -1px;
+      }
+      &::before{
+        top: 0px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

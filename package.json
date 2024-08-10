@@ -1,0 +1,31 @@
+{
+  "name": "snype",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@barba/core": "^2.10.0",
+    "@gsap/react": "^2.1.1",
+    "barba": "^1.0.0",
+    "framer-motion": "12.0.0-alpha.0",
+    "gsap": "^3.12.5",
+    "locomotive-scroll": "5.0.0-beta.13",
+    "next": "15.0.0-rc.0",
+    "react": "19.0.0-rc-3563387fe3-20240621",
+    "react-dom": "19.0.0-rc-3563387fe3-20240621",
+    "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "eslint": "^9.8.0",
+    "eslint-config-next": "15.0.0-rc.0",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
+  },
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
+}

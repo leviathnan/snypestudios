@@ -1,0 +1,24 @@
+.main{
+  cursor: default;
+  background-color: black;
+  .introdiv{
+    .intro{
+      font-size: 7rem;
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      right: 50%;
+      padding: 7rem;
+    }
+    p{
+      color: white;
+      font-size: 3rem;
+      margin: 7rem;
+    }
+
+  }
+  .image{
+    margin: 0;
+    padding-left: 6rem;
+  }
+}

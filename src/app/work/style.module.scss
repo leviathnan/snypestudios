@@ -1,0 +1,32 @@
+.main{
+  cursor: default;
+  background-color: black;
+
+  .headContainer{
+    display: flex;
+    position: relative;
+    top: 10rem;
+    align-items: center;
+    margin: 0 143.705px;
+    padding: 0 304px;
+    h1{
+      font-size: 7rem;
+      font-weight: 500;
+      white-space: nowrap;
+      color: white;
+    }
+  }
+  .circleContainer{
+    position: relative;
+    .circle{
+      height: 1550%;
+      width: 120%;
+      left: -10%;
+      border-radius: 0 0 50% 50%;
+      background-color: white;
+      z-index: 1;
+      position: absolute;
+      box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+    }
+  }
+}
