@@ -52,7 +52,7 @@ export default function Index() {
     <motion.main variants={slideUp} initial='initial' animate='enter' className={`${styles.main} ${neue_montreal.className}`}>
       <Image 
         fill={true}
-        src="../../public/Images/snype_pic02.PNG"
+        src={"../../public/Images/snype_pic02.PNG"}
         alt="background"
       />
       <div className={styles.sliderContainer}>
