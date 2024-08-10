@@ -2,6 +2,7 @@
 import styles from './style.module.scss';
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 import Project from './component/project';
 import Image from "next/image";
 import {motion} from 'framer-motion';
@@ -10,22 +11,22 @@ import { neue_montreal } from '@/fonts';
 
 const projects =[
   {
-    title: 'Nigga',
+    title: 'Russia',
     src: 'demo-pic01.jpg',
     color: '#000000'
   },
   {
-    title: 'Tapatio Chips',
+    title: 'Canada',
     src: 'demo-pic02.jpg',
     color: '#8C8C8C'
   },
   {
-    title: 'Asian chigga',
+    title: 'Germany',
     src: 'demo-pic03.jpg',
     color: '#EFE8D3'
   },
   {
-    title: 'American Wigga',
+    title: 'America',
     src: 'demo-pic04.jpg',
     color: '#706D63'
   }
@@ -52,7 +53,7 @@ export default function Home(){
   let MoveCursorLabelX = useRef(null);
   let MoveCursorLabelY = useRef(null);
 
-  useEffect(()=>{
+  useGSAP(()=>{
     MoveContainerX.current = gsap.quickTo(container.current, "left", {duration:0.8, ease:"power3"})
     MoveContainerY.current = gsap.quickTo(container.current, "top", {duration:0.8, ease:"power3"})
 
@@ -61,6 +62,7 @@ export default function Home(){
 
     MoveCursorLabelX.current = gsap.quickTo(cursorLabel.current, "left", {duration:0.45, ease:"power3"})
     MoveCursorLabelY.current = gsap.quickTo(cursorLabel.current, "top", {duration:0.45, ease:"power3"})
+
   }, [])
 
   const moveItems = (x, y) => {
