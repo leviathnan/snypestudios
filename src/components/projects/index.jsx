@@ -9,28 +9,28 @@ import {motion} from 'framer-motion';
 import Rounded from '../../common/roundedButton'
 import { neue_montreal } from '@/fonts';
 
-const projects =[
+const projects = [
   {
-    title: 'Russia',
-    src: 'demo-pic01.jpg',
-    color: '#000000'
+    title: "Russia",
+    src: "https://utfs.io/f/89adeaa0-a2bd-4d75-a565-4131b2655d8b-ta6aht.jpg",
+    color: "#000000",
   },
   {
-    title: 'Canada',
-    src: 'demo-pic02.jpg',
-    color: '#8C8C8C'
+    title: "Canada",
+    src: "https://utfs.io/f/d297518b-4911-4a6d-bca3-aaf6a20c095e-ta6ahu.jpg",
+    color: "#8C8C8C",
   },
   {
-    title: 'Germany',
-    src: 'demo-pic03.jpg',
-    color: '#EFE8D3'
+    title: "Germany",
+    src: "https://utfs.io/f/b3bb4377-7ba6-4aad-871c-1d63550398a7-ta6ahv.jpg",
+    color: "#EFE8D3",
   },
   {
-    title: 'America',
-    src: 'demo-pic04.jpg',
-    color: '#706D63'
-  }
-]
+    title: "America",
+    src: "https://utfs.io/f/ee8372e1-589a-4a40-9680-451a68f1b164-ta6ahw.jpg",
+    color: "#706D63",
+  },
+];
 const scaleAnimation = {
   initial: {scale: 0, x:"-50%", y:"-50%"},
   open: {scale: 1, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.76, 0, 0.24, 1]}},
@@ -97,7 +97,7 @@ export default function Home(){
               projects.map((project, index)=> {
                 return <div key={`modal_${index}`} style={{backgroundColor: project.color}} className={styles.modal}>
                   <Image
-                    src={`/images/${project.src}`}
+                    src={`${project.src}`}
                     width ={300}
                     height={0}
                     alt='image'

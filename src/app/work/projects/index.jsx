@@ -12,7 +12,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 const projects = [
   {
     title: "America",
-    src: "demo-pic01.jpg",
+    src: "https://utfs.io/f/b0734153-870a-4622-977a-2ef2f9796638-ta6ahx.jpg",
     location: "Mars",
     services: "Editing",
     Year: "2024",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Russia",
-    src: "demo-pic02.jpg",
+    src: "https://utfs.io/f/d297518b-4911-4a6d-bca3-aaf6a20c095e-ta6ahu.jpg",
     location: "Jupiter",
     services: "Design",
     Year: "2024",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: "Germany",
-    src: "demo-pic03.jpg",
+    src: "https://utfs.io/f/b3bb4377-7ba6-4aad-871c-1d63550398a7-ta6ahv.jpg",
     location: "Mars",
     services: "Development",
     Year: "2024",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: "Poland",
-    src: "demo-pic04.jpg",
+    src: "https://utfs.io/f/ee8372e1-589a-4a40-9680-451a68f1b164-ta6ahw.jpg",
     location: "Mars",
     services: "Design",
     Year: "2023",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: "Italy",
-    src: "demo-pic01.jpg",
+    src: "https://utfs.io/f/b0734153-870a-4622-977a-2ef2f9796638-ta6ahx.jpg",
     location: "Mars",
     services: "Editing",
     Year: "2024",
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: "Ireland",
-    src: "demo-pic02.jpg",
+    src: "https://utfs.io/f/4ebc4a65-c677-433e-b857-dfea4336b91b-ta6ahy.jpg",
     location: "Jupiter",
     services: "Development",
     Year: "2024",
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     title: "Canada",
-    src: "demo-pic03.jpg",
+    src: "https://utfs.io/f/a30c6c55-f35f-4f02-aa71-1dda9a4535d6-ta6ahz.jpg",
     location: "Mars",
     services: "Design",
     Year: "2024",
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: "Indian",
-    src: "demo-pic04.jpg",
+    src: "https://utfs.io/f/2ef3b3e6-8e41-4aa0-a5a7-2e2abfafa2e3-ta6ai0.jpg",
     location: "Mars",
     services: "Editing",
     Year: "2023",
@@ -210,7 +210,7 @@ export default function Home(){
                   className={styles.modal}
                 >
                   <Image
-                    src={`/images/${project.src}`}
+                    src={`${project.src}`}
                     width={300}
                     height={0}
                     alt="image"
