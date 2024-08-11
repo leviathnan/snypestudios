@@ -60,6 +60,7 @@ export default function Index() {
         src={
           "https://utfs.io/f/1062bd09-b3f4-468f-91a5-75ff81bf4485-6j6ybk.PNG"
         }
+        loading='eager'
         alt="background"
       />
       <div className={styles.sliderContainer}>
